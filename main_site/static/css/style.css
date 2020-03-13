@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+}
+
+.backgroundMenu {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  margin-top: 2%;
+}
+
+#topImg {
+  width: 100vw;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+#topImg img {
+  border-style: solid;
+  border-color: #ff4a60;
+  width: 99vw;
+}
+
+.header {
+  text-align: center;
+}
+.header h1 {
+  font-size: 50px;
+  font-family: "DejaVu Serif", sans-serif;
+  color: #ff4a60;
+}
+
+.text-href {
+  height: 60px;
+  width: 100px;
+  background: black;
+  border-style: solid;
+  border-color: #ff4a60;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+}
+.text-href a {
+  align-content: center;
+  display: inline-grid;
+  font-size: 20px;
+  font-family: "DejaVu Serif", sans-serif;
+  text-decoration: none;
+  transition: color 0.2s;
+  color: white;
+}
+.text-href a:hover {
+  color: #ff4a60;
+}
+
+/*# sourceMappingURL=style.css.map */

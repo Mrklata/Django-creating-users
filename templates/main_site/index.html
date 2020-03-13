@@ -1,0 +1,25 @@
+{% load static %}
+
+<html lang="pl">
+<head>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Main</title>
+</head>
+<body>
+<div class="backgroundMenu">
+    <div class="text-href">
+        <a href="#">Home</a>
+    </div>
+    <div class="text-href">
+        <a href="{% url 'login' %}">Login</a>
+    </div>
+    <div class="text-href">
+        <a href="{% url 'register' %}">Register</a>
+    </div>
+</div>
+<div id="topImg">
+    <img src="{% static 'img/wallpaper2.png' %}" alt="bcg">
+</div>
+
+</body>
+</html>
