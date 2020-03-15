@@ -102,9 +102,10 @@ body {
 }
 
 #logos {
-  position: absolute;
-  left: 15%;
-  right: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
 
 .logo {
