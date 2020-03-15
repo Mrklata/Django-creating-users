@@ -21,6 +21,15 @@ body {
 #topImg img {
   width: 100vw;
 }
+#topImg a {
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 470px;
+  text-decoration: none;
+  font-family: "DejaVu Serif", sans-serif;
+  opacity: 0.8;
+}
 
 .header {
   text-align: center;

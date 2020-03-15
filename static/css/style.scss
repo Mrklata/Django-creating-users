@@ -24,6 +24,17 @@ body {
     //border-color: #ff4a60;
     width: 100vw;
   }
+
+  a {
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 470px;
+    text-decoration: none;
+    font-family: "DejaVu Serif", sans-serif;
+    opacity: 0.8;
+
+  }
 }
 
 .header {
