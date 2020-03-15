@@ -1,25 +1,33 @@
 from django.shortcuts import render, redirect
-from django.contrib.auth.models import User, auth
+from accounts.models import LangDescription
+
+
 # Create your views here.
 
 
-def login(request):
-    pass
+def contact(request):
+    return render(request, 'accounts/contact.html')
 
 
-def register(request):
+def skills(request):
+    return render(request, 'accounts/skills.html')
 
-    if request.method == 'POST':
-        first_name = request.POST['first_name']
-        last_name = request.POST['last_name']
-        password1 = request.POST['password1']
-        password2 = request.POST['password2']
-        username = request.POST['username']
-        email = request.POST['email']
 
-        user = User.objects.create_user(username=username, password=password1, email=email, first_name=first_name, last_name=last_name)
-        user.save()
-        print('user created')
-        return redirect('/')
-    else:
-        return render(request, 'accounts/register.html')
+def python(request):
+    file = LangDescription.objects.filter(selection='Python')[0]
+    return render(request, 'accounts/python.html', {'file': file})
+
+
+def django(request):
+    file = LangDescription.objects.filter(selection='Django')[0]
+    return render(request, 'accounts/django.html', {'file': file})
+
+
+def html(request):
+    file = LangDescription.objects.filter(selection='HTML')[0]
+    return render(request, 'accounts/html.html', {'file': file})
+
+
+def css(request):
+    file = LangDescription.objects.filter(selection='CSS')[0]
+    return render(request, 'accounts/css.html', {'file': file})

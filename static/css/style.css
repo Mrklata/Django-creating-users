@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+}
+
+.backgroundMenu {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#topImg {
+  width: 100vw;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+#topImg img {
+  width: 100vw;
+}
+
+.header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.header h1 {
+  font-size: 50px;
+  font-family: "DejaVu Serif", sans-serif;
+  color: #ff4a60;
+}
+.header img {
+  height: 100px;
+  width: auto;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.text-href {
+  height: 60px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+}
+.text-href a {
+  align-content: center;
+  display: inline-grid;
+  font-size: 20px;
+  font-family: "DejaVu Serif", sans-serif;
+  text-decoration: none;
+  transition: color 0.2s;
+  color: white;
+  opacity: 1;
+}
+.text-href a:hover {
+  color: #ff4a60;
+}
+
+#mainContent {
+  margin: 10px;
+  border-style: solid;
+  border-color: #ff4a60;
+  display: flex;
+  justify-content: center;
+}
+#mainContent a {
+  text-decoration: none;
+  color: #ff4a60;
+  font-family: "DejaVu Serif", sans-serif;
+  font-size: 22px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+#mainContent p {
+  font-family: "DejaVu Serif", sans-serif;
+  font-size: 22px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+#mainContent img {
+  margin-left: 22px;
+  background-color: black;
+  height: 32px;
+  width: auto;
+  transition: background-color 0.2s;
+}
+#mainContent img:hover {
+  background-color: #ff4a60;
+}
+
+#contactsContent {
+  display: grid;
+  justify-content: center;
+}
+
+#contactsHref {
+  display: grid;
+  justify-items: center;
+}
+
+#logos {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+}
+
+.logo {
+  margin: 30px;
+  display: flex;
+  float: left;
+}
+.logo img {
+  height: 300px;
+  width: auto;
+}
+
+#sideContent {
+  margin: 10px;
+  border-style: solid;
+  border-color: #ff4a60;
+  display: flex;
+  justify-content: center;
+}
+#sideContent p {
+  font-family: "DejaVu Serif", sans-serif;
+  font-size: 45px;
+  margin: 22px 10%;
+}
+
+#imgLink {
+  display: flex;
+}
+#imgLink a {
+  text-decoration: none;
+  color: #ff4a60;
+  font-family: "DejaVu Serif", sans-serif;
+  font-size: 22px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  margin-left: 10px;
+}
+
+#langContent {
+  display: flex;
+}
+
+#langDescription {
+  margin: 10px;
+  border-style: solid;
+  border-color: #ff4a60;
+  display: flex;
+  justify-content: center;
+}
+#langDescription p {
+  font-family: "DejaVu Serif", sans-serif;
+  font-size: 35px;
+  margin: 22px 10%;
+}
+
+#langImage {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+#langImage img {
+  height: 300px;
+  width: auto;
+  margin: 15px;
+}
+
+#langSkills {
+  margin: 10px;
+  border-style: solid;
+  border-color: #ff4a60;
+  display: flex;
+  justify-content: center;
+}
+#langSkills p {
+  font-family: "DejaVu Serif", sans-serif;
+  font-size: 35px;
+  margin: 22px 10%;
+}
+
+/*# sourceMappingURL=style.css.map */

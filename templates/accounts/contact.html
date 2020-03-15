@@ -1,0 +1,21 @@
+{% extends 'main_site/index.html' %}
+{% load static %}
+{% block content %}
+    <div class="header">
+        <h1>How to contact me?</h1>
+    </div>
+    <div id="mainContent">
+        <div id="contactsContent">
+            <p>My email:</p>
+            <p>My Github:</p>
+            <p>My Linkedin:</p>
+        </div>
+
+        <div id="contactsHref">
+            <a href="mailto:lukasz98kowalczyk@gamail.com?subject='subject text'">
+                lukasz98kowalczyk@gmail.com</a>
+            <a href="https://github.com/Mrklata"><img src="{% static 'img/git.png' %}" alt="git"></a>
+            <a href="https://www.linkedin.com/in/%C5%82ukasz-kowalczyk-35259b19b/"><img src="{% static 'img/in.png' %}" alt="in"></a>
+        </div>
+    </div>
+{% endblock %}

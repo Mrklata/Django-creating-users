@@ -3,23 +3,27 @@
 <html lang="pl">
 <head>
     <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
-    <title>Main</title>
+    <title>Mr_klata</title>
 </head>
 <body>
+
 <div class="backgroundMenu">
     <div class="text-href">
-        <a href="#">Home</a>
+        <a href="{% url 'main_site' %}">Home</a>
     </div>
     <div class="text-href">
-        <a href="{% url 'login' %}">Login</a>
+        <a href="{% url 'contact' %}">Contact</a>
     </div>
     <div class="text-href">
-        <a href="{% url 'register' %}">Register</a>
+        <a href="{% url 'skills' %}">My skills</a>
     </div>
 </div>
 <div id="topImg">
-    <img src="{% static 'img/wallpaper2.png' %}" alt="bcg">
+    <img src="{% static 'img/wallpaper.jpg' %}" alt="bcg">
 </div>
-
+{% block content %}{% endblock %}
+<div id="imgLink">
+    <a href="https://www.pexels.com/pl-pl/@felixmittermeier">Background photo creator</a>
+</div>
 </body>
 </html>
