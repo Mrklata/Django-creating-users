@@ -25,7 +25,7 @@ SECRET_KEY = 'hw_1(mwb@c!4gs2=x^mb#y#nl1v)u2v(^%7y^y1+b^3-g=637i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://mr-klata-website.herokuapp.com']
 
 
 # Application definition
@@ -123,5 +123,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'account_try_1/../static')
+    os.path.join(BASE_DIR, 'static')
 ]
+
+import django_heroku
+django_heroku.settings(locals())
