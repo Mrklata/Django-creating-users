@@ -14,20 +14,20 @@ def skills(request):
 
 
 def python(request):
-    file = LangDescription.objects.filter(selection='Python')[0]
+    file = LangDescription.objects.get(selection='Python')
     return render(request, 'accounts/python.html', {'file': file})
 
 
 def django(request):
-    file = LangDescription.objects.filter(selection='Django')[0]
+    file = LangDescription.objects.get(selection='Django')
     return render(request, 'accounts/django.html', {'file': file})
 
 
 def html(request):
-    file = LangDescription.objects.filter(selection='HTML')[0]
+    file = LangDescription.objects.get(selection='HTML')
     return render(request, 'accounts/html.html', {'file': file})
 
 
 def css(request):
-    file = LangDescription.objects.filter(selection='CSS')[0]
+    file = LangDescription.objects.get(selection='CSS')
     return render(request, 'accounts/css.html', {'file': file})

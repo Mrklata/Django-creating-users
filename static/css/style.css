@@ -17,9 +17,8 @@ body {
   height: 500px;
   display: flex;
   justify-content: center;
-}
-#topImg img {
-  width: 100vw;
+  background: url("/static/img/wallpaper.jpg");
+  background-size: cover;
 }
 #topImg a {
   color: white;

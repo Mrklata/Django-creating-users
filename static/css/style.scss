@@ -18,12 +18,13 @@ body {
   height: 500px;
   display: flex;
   justify-content: center;
-
-  img {
-    //border-style: solid;
-    //border-color: #ff4a60;
-    width: 100vw;
-  }
+  background: url("/static/img/wallpaper.jpg");
+  background-size: cover;
+  //img {
+  //  //border-style: solid;
+  //  //border-color: #ff4a60;
+  //  width: 100vw;
+  //}
 
   a {
     color: white;
