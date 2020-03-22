@@ -1,10 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+{% extends 'main_site/index.html' %}
+{% load static %}
+{% block content %}
+    <div class="header">
+        <h1>{{ file.name }}</h1>
+    </div>
+    <div id="langContent">
+        <div id="langDescription">
+            <p>{{ file.description }}</p>
+        </div>
+        <div id="langImage">
+            <img src="{% static 'img/R.png' %}" alt="django">
+        </div>
+    </div>
+    <div id="langSkills">
+        <p>{{ file.libs }}</p>
+    </div>
+{% endblock %}
