@@ -6,6 +6,8 @@ class LangDescription(models.Model):
                 ('HTML', 'HTML'),
                 ('Django', 'Django'),
                 ('CSS', 'CSS'),
+                ('R', 'R'),
+                ('bash', 'bash'),
                 )
     selection = models.CharField(max_length=100, choices=LANGUAGE, default='HTML')
     name = models.CharField(max_length=100)

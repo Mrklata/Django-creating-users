@@ -31,3 +31,13 @@ def html(request):
 def css(request):
     file = LangDescription.objects.get(selection='CSS')
     return render(request, 'accounts/css.html', {'file': file})
+
+
+def r(request):
+    file = LangDescription.objects.get(selection='R')
+    return render(request, 'accounts/R.html', {'file': file})
+
+
+def bash(request):
+    file = LangDescription.objects.get(selection='bash')
+    return render(request, 'accounts/bash.html', {'file': file})
