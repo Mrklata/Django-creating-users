@@ -73,6 +73,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'account_try_1.wsgi.application'
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases

@@ -85,19 +85,26 @@ body {
 }
 
 #mainContent {
-  margin: 10px;
+  margin: 5%;
   border-style: solid;
   border-color: #ff4a60;
+  border-radius: 15px 40px;
   display: flex;
   justify-content: center;
+  background: #ff4a60;
 
   a {
     text-decoration: none;
-    color: #ff4a60;
+    color: black;
     font-family: "DejaVu Serif", sans-serif;
     font-size: 22px;
     margin-top: 22px;
     margin-bottom: 22px;
+    transition: color 0.2s;
+
+    &:hover {
+      color: white;
+    }
   }
 
   p {
@@ -105,18 +112,18 @@ body {
     font-size: 22px;
     margin-top: 22px;
     margin-bottom: 22px;
+    color: white;
 
   }
 
   img {
-    margin-left: 22px;
     background-color: black;
     height: 32px;
     width: auto;
     transition: background-color 0.2s;
 
     &:hover {
-      background-color: #ff4a60;
+      background-color: white;
     }
   }
 }
@@ -180,19 +187,22 @@ body {
 
 #langContent {
   display: flex;
+  margin: 5%;
 }
 
 #langDescription {
-  margin: 10px;
-  border-style: solid;
-  border-color: #ff4a60;
   display: flex;
   justify-content: center;
+  border-radius: 15px 40px;
+  border-color: #ff4a60;
+  background: #ff4a60;
+  border-style: solid;
 
   p {
     font-family: "DejaVu Serif", sans-serif;
     font-size: 35px;
     margin: 22px 10%;
+    color: white;
   }
 }
 
@@ -209,15 +219,18 @@ body {
 }
 
 #langSkills {
-  margin: 10px;
+  margin: 5%;
   border-style: solid;
   border-color: #ff4a60;
+  border-radius: 20px 40px;
   display: flex;
   justify-content: center;
+  background: #ff4a60;
 
   p {
     font-family: "DejaVu Serif", sans-serif;
     font-size: 35px;
     margin: 22px 10%;
+    color: white;
   }
 }

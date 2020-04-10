@@ -3,11 +3,5 @@ from accounts import views
 urlpatterns = [
     path('contact/', views.contact, name="contact"),
     path('skills/', views.skills, name="skills"),
-    path('skills/python', views.python, name='python'),
-    path('skills/django', views.django, name='django'),
-    path('skills/html', views.html, name='html'),
-    path('skills/css', views.css, name='css'),
-    path('skills/R', views.r, name='R'),
-    path('skills/bash', views.bash, name='bash'),
-
+    path('skills/<str:name>/', views.skill_views, name='skill'),
 ]

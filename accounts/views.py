@@ -10,34 +10,10 @@ def contact(request):
 
 
 def skills(request):
-    return render(request, 'accounts/skills.html')
+    files = LangDescription.objects.all()
+    return render(request, 'accounts/skills.html', {'files': files})
 
 
-def python(request):
-    file = LangDescription.objects.get(selection='Python')
-    return render(request, 'accounts/python.html', {'file': file})
-
-
-def django(request):
-    file = LangDescription.objects.get(selection='Django')
-    return render(request, 'accounts/django.html', {'file': file})
-
-
-def html(request):
-    file = LangDescription.objects.get(selection='HTML')
-    return render(request, 'accounts/html.html', {'file': file})
-
-
-def css(request):
-    file = LangDescription.objects.get(selection='CSS')
-    return render(request, 'accounts/css.html', {'file': file})
-
-
-def r(request):
-    file = LangDescription.objects.get(selection='R')
-    return render(request, 'accounts/R.html', {'file': file})
-
-
-def bash(request):
-    file = LangDescription.objects.get(selection='bash')
-    return render(request, 'accounts/bash.html', {'file': file})
+def skill_views(request, name):
+    skill = LangDescription.objects.get(name__iexact=name)
+    return render(request, 'accounts/skill.html', {'skill': skill})

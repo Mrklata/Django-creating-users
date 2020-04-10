@@ -2,17 +2,17 @@
 {% load static %}
 {% block content %}
     <div class="header">
-        <h1>{{ file.name }}</h1>
+        <h1>{{ skill.name }}</h1>
     </div>
     <div id="langContent">
         <div id="langDescription">
-            <p>{{ file.description }}</p>
+            <p>{{ skill.description }}</p>
         </div>
         <div id="langImage">
-            <img src="{% static 'img/python.png' %}" alt="pyt">
+            <img src="{{ skill.image.url }}" alt="img">
         </div>
     </div>
     <div id="langSkills">
-        <p>{{ file.libs }}</p>
+        <p>{{ skill.libs }}</p>
     </div>
 {% endblock %}
